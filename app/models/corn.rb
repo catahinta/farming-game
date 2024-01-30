@@ -1,0 +1,2 @@
+class Corn < ApplicationRecord
+end
