@@ -1,2 +1,2 @@
-class Rice < ApplicationRecord
+class Rice < Crop
 end

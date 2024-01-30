@@ -1,2 +1,2 @@
-class Corn < ApplicationRecord
+class Corn < Crop
 end
