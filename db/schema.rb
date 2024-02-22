@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_01_30_180944) do
+ActiveRecord::Schema[7.1].define(version: 2024_02_22_170504) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -21,8 +21,8 @@ ActiveRecord::Schema[7.1].define(version: 2024_01_30_180944) do
 
   create_table "crops", force: :cascade do |t|
     t.string "type"
-    t.integer "dryness"
-    t.integer "grains"
+    t.integer "dryness", default: 0
+    t.integer "grains", default: 0
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
